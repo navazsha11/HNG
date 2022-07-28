@@ -1,48 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<!--divinectorweb.com-->
 <head>
-	<meta charset="UTF-8">
-	<title>Home Guardian Admin</title>
-	<link rel="stylesheet" href="styles.css">
-	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <meta charset="UTF-8">
+    <title>Network Guardian admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="wrapper">
-    <div class="sidebar">
-        <h2>Home Guardian</h2>
-        <ul>
-            <li><a href="#"><i class="fas"></i>Home</a></li>
-            <!-- <li><a href="#"><i class="fas"></i>PI- Hole</a></li>
-            <li><a href="#"><i class="fas"></i>Pi VPN</a></li>
-            <li><a href="#"><i class="fas"></i>IDS</a></li> -->
-            <li><a href="#"><i class="fas"></i>Tutorial</a></li>
-        </ul> 
-        <!-- <div class="social_media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-      </div> -->
+    <div id="leftMenu">
+        <a href="javscript:void(0)" class="btn-area" onclick="closeBtn()">&times;</a>
+        <div class="mainNav">
+            <a href="#">home</a>
+            <a href="#services">Dashboard</a>
+            <a href="#Documentation">Documentation</a>
+            <!-- <a href="#blog">blog</a> -->
+            <!-- <a href="#contact">contact</a> -->
+            <!-- <a href="#about">services</a> -->
+        </div>
     </div>
-    <div class="main_content">
-        <div class="header">Components</div>  
-        <div class="info">
-          <div id="outer">
-            <div class="inner"><button class="button-67" role="button">PI-Hole</button></div>
-            <div class="inner"><button class="button-67" role="button">PI VPN</button></div>
-            <div class="inner"><button class="button-67" role="button">IDS</button></div>
-          </div>
-          <!-- <div class="row">
-            <button class="button-67" role="button">PI-Hole</button>
-            <button class="button-67" role="button">PI VPN</button>
-            <button class="button-67" role="button">IDS</button>
-          <div> -->
-          <!-- <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
-          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div>
-          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed nobis ut exercitationem atque accusamus sit natus officiis totam blanditiis at eum nemo, nulla et quae eius culpa eveniet voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio perferendis itaque alias sint, beatae non maiores magnam ad, veniam tenetur atque ea exercitationem earum eveniet totam ipsam magni tempora aliquid ullam possimus? Tempora nobis facere porro, praesentium magnam provident accusamus temporibus! Repellendus harum veritatis itaque molestias repudiandae ea corporis maiores non obcaecati libero, unde ipsum consequuntur aut consectetur culpa magni omnis vero odio suscipit vitae dolor quod dignissimos perferendis eos? Consequuntur!</div> -->
-      </div>
+    <span onclick="openBtn()">&#9776; Menu</span>
+    
+    <div class="content">
+        <div class="box">
+            <h2>Network Guardian</h2>
+            <p>Secure Your Network the easiest way</p>
+        </div>
     </div>
-</div>
+    <!-- <div class="about" id="about">
+        <div class="box">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolor, reprehenderit in enim amet aspernatur ipsum praesentium fugiat error ea tempore, aut rem nostrum labore?</p>
+        </div>
+    </div> -->
 
+    <div class="services" id="services">
+        <div class="box">
+            <div id="outer">
+                <div class="inner"><button class="button" type="button">Pi-Hole</button></div>
+                <div class="inner"><button class="button" type="button">PI VPN</button></div>
+                <div class="inner"><button class="button" type="button">IDS</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="Documentation">
+        <div class="box">
+            <h2>Documentation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolor, reprehenderit in enim amet aspernatur ipsum praesentium fugiat error ea tempore, aut rem nostrum labore?</p>
+        </div>
+    </div>
+    <!-- <div class="blog" id="blog">
+        <div class="box">
+            <h2>Our Blog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolor, reprehenderit in enim amet aspernatur ipsum praesentium fugiat error ea tempore, aut rem nostrum labore?</p>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolor, reprehenderit in enim amet aspernatur ipsum praesentium fugiat error ea tempore, aut rem nostrum labore?</p>
+        </div>
+    </div> -->
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function openBtn()
+        {
+            document.getElementById("leftMenu").style.width = "250px";
+        }
+
+        function closeBtn()
+        {
+            document.getElementById("leftMenu").style.width = "0";
+        }
+    </script>
 </body>
 </html>
