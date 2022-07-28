@@ -105,9 +105,11 @@ span {
 }
 .button{
 	cursor: pointer;
-    display: inline-block;
+    display: block;
 	font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
-	padding: 90px 90px;
+	padding: 45px 45px;
+	font-size: larger;
+	text-align: center;
 	border-radius: 50px;
 	border: none;
 	transition: all 0.3s ease 0s;
@@ -122,17 +124,39 @@ span {
   
   #outer
   {
-      width:150%;
+      width:125%;
       text-align: center;
       display: flex;
   }
   .inner
   {
-    display: inline-block;
-    width: 300px;
+    display: block;
+    width: 325px;
     justify-content: center;
     align-items: center;
     
+  }
+.bottom-column a {
+    display: block;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	color: saddlebrown;
+}
+
+a:link {
+	text-decoration: none;
+  }
+  
+  a:visited {
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  a:active {
+	text-decoration: underline;
   }
 @media (max-width:767px) {
 	span {
